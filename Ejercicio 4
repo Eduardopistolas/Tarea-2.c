@@ -1,5 +1,5 @@
 //Problemas simples
-//En una Casa de Cambio necesitan construir un programa que dado como dato una cantidad expresada en d ́olares, convierta esa cantidad en pesos.
+//En una Casa de Cambio necesitan construir un programa que dado como dato una cantidad expresada en dolares, convierta esa cantidad en pesos.
 
 #include <stdio.h>
 int main()
