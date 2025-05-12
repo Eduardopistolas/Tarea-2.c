@@ -1,0 +1,22 @@
+//Problemas simples
+//calcule e imprima el  area y la circunferencia.
+
+#include <stdio.h>
+int main() 
+
+{
+    float radio;
+    float area, circunferencia;
+    const float PI = 3.1416;
+
+    printf("Ingrese el radio del círculo: ");
+    scanf("%f", &radio);
+
+    area = PI * radio * radio;
+    circunferencia = 2 * PI * radio;
+
+    printf("area: %.2f\n", area);
+    printf("Circunferencia: %.2f\n", circunferencia);
+
+    return 0;
+}
