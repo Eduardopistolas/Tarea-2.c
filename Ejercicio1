@@ -1,0 +1,20 @@
+//Problemas simples
+//Escriba un diagrama de flujo tal que dado como datos dos ńumeros y calcular la suma, resta y multiplicacion
+
+#include <stdio.h>
+
+int main() {
+    int numero1, numero2;
+
+    printf("Ingrese el primer número: ");
+    scanf("%d", &numero1);
+
+    printf("Ingrese el segundo número: ");
+    scanf("%d", &numero2);
+
+    printf("Suma: %d\n", numero1 + numero2);
+    printf("Resta: %d\n", numero1 - numero2);
+    printf("Multiplicación: %d\n", numero1 * numero2);
+
+    return 0;
+}
