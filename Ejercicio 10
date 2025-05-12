@@ -1,0 +1,31 @@
+//Problemas con Estructuras Repetitivas (For, While)
+#include <stdio.h>
+
+int main()
+{
+    int numero;
+    int positivos = 0, negativos = 0, nulos = 0;
+    int cont = 0;
+
+    while (cont < 100) {
+        printf("Ingresa el número %d: ", cont + 1);
+        scanf("%d", &numero);
+
+        if (numero > 0) {
+            positivos++;
+        } else if (numero < 0) {
+            negativos++;
+        } else {
+            nulos++;
+        }
+
+        cont++;
+    }
+
+    printf("\nResultados:\n");
+    printf("Positivos: %d\n", positivos);
+    printf("Negativos: %d\n", negativos);
+    printf("Nulos: %d\n", nulos);
+
+    return 0;
+}
