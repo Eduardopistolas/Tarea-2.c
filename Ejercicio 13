@@ -1,0 +1,31 @@
+//problemas con arreglos
+
+#include <stdio.h>
+
+int main() 
+{
+    int N, i = 0, suma = 0;
+
+    printf("Ingrese el tamaño del arreglo: ");
+    scanf("%d", &N);
+
+    int arreglo[N];
+
+    // Leer los elementos del arreglo
+    while(i < N) {
+        printf("Ingrese el elemento %d: ", i + 1);
+        scanf("%d", &arreglo[i]);
+        i++;
+    }
+
+    // Sumar los elementos
+    i = 0;
+    while(i < N) {
+        suma += arreglo[i];
+        i++;
+    }
+
+    printf("La suma de los elementos es: %d\n", suma);
+
+    return 0;
+}
