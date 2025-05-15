@@ -1,0 +1,20 @@
+//for while
+#include <stdio.h>
+
+int main() 
+{
+    int N, i;
+    int producto = 1;
+
+    printf("Ingrese un número  menor a 12: ");
+    scanf("%d", &N);
+
+    for(i = 1; i <= N; i++) {
+        producto *= i;
+    }
+
+    printf("El producto de los primeros %d números naturales es: %d\n", N, producto);
+
+    return 0;
+}
+
