@@ -1,0 +1,35 @@
+//Problemas con arreglos
+#include <stdio.h>
+
+int main()
+{
+    int N, i = 0;
+    int positivos = 0, negativos = 0, nulos = 0;
+
+    printf("Ingrese el tamaño del arreglo: ");
+    scanf("%d", &N);
+
+    int arreglo[N];
+
+    while(i < N) {
+        printf("Ingrese el elemento %d: ", i + 1);
+        scanf("%d", &arreglo[i]);
+
+        if(arreglo[i] > 0) {
+            positivos++;
+        } else if(arreglo[i] < 0) {
+            negativos++;
+        } else {
+            nulos++;
+        }
+
+        i++;
+    }
+
+    printf("Positivos: %d\n", positivos);
+    printf("Negativos: %d\n", negativos);
+    printf("Nulos: %d\n", nulos);
+
+    return 0;
+}
+
