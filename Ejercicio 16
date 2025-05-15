@@ -1,0 +1,20 @@
+//Problemas con arreglos
+#include <stdio.h>
+
+int main() {
+    int arreglo[100];
+    int i, num = 2;
+
+    for(i = 0; i < 100; i++) {
+        arreglo[i] = num;
+        num += 2;
+    }
+
+    for(i = 0; i < 100; i++) {
+        printf("%d ", arreglo[i]);
+    }
+
+    printf("\n");
+
+    return 0;
+}
