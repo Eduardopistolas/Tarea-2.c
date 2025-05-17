@@ -1,18 +1,17 @@
 //Problemas simples
-//En una Casa de Cambio necesitan construir un programa que dado como dato una cantidad expresada en dolares, convierta esa cantidad en pesos.
-
 #include <stdio.h>
-int main()
 
+int main() 
 {
-    float dolares, pesos;
+    float cantidad_invertida, interes_mensual, monto_final;
 
-    printf("Ingrese la cantidad en dolares: ");
-    scanf("%f", &dolares);
-
-    pesos = dolares * 11.96;
-
-    printf("Recibira en pesos: %.2f\n", pesos);
+    
+    printf("Ingrese la cantidad invertida: ");
+    scanf("%f", &cantidad_invertida);
+    printf("Ingrese la tasa de interes mensual (en %%): ");
+    scanf("%f", &interes_mensual);
+    monto_final = cantidad_invertida + (cantidad_invertida * interes_mensual / 100);
+    printf("El monto final al terminar el mes es: %.2f\n", monto_final);
 
     return 0;
 }
